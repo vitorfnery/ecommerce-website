@@ -20,8 +20,8 @@
             "~/*": [
                 "src/*"
             ],
-            "~Product/*": [
-                "src/components/Product/*"
+            "~CartItem/*": [
+                "src/components/CartItem/*"
             ]
         }
     }
