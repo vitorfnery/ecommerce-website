@@ -19,6 +19,9 @@
             ],
             "~/*": [
                 "src/*"
+            ],
+            "~Product/*": [
+                "src/components/Product/*"
             ]
         }
     }
