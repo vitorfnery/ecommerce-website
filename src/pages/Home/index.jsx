@@ -21,7 +21,7 @@ const Home = () => {
                       "
           >
             {filteredProducts.map((product) => {
-              return <Product product={product} key={product.key} />;
+              return <Product product={product} key={product.id} />;
             })}
           </div>
         </div>

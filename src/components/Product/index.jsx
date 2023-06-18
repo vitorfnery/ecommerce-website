@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { HiPlusSmall, HiEye } from "react-icons/hi2";
+import { CartContext } from "~contexts/CartContext";
 
 const Product = ({ product }) => {
-  console.log(product);
+  const { addToCart } = useContext(CartContext);
   const { id, image, category, title, price } = product;
   return (
     <div>
@@ -25,7 +26,7 @@ const Product = ({ product }) => {
                     transition-all duration-300
                     "
         >
-          <button>
+          <button onClick={() => addToCart(product, id)}>
             <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500">
               <HiPlusSmall className="text-3xl" />
             </div>
