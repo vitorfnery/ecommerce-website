@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       className="
-              bg-pink-200 h-[800px] bg-hero 
+                h-[800px] bg-hero 
                 bg-no-repeat bg-cover bg-center py-24
                 "
     >
