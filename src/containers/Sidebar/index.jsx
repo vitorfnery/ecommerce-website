@@ -28,7 +28,7 @@ const Sidebar = () => {
       <div
         className="
         flex flex-col gap-y-2 
-        h-[320px] lg:h-[420px]
+        h-[320px] lg:h-[380px]
         overflow-y-auto overflow-x-hidden border-b
                   "
       >
@@ -51,6 +51,18 @@ const Sidebar = () => {
             <FiTrash2 />
           </div>
         </div>
+        <Link
+          to={"/"}
+          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
+        >
+          View Cart
+        </Link>
+        <Link
+          to={"/"}
+          className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium"
+        >
+          Checkout
+        </Link>
       </div>
     </div>
   );
