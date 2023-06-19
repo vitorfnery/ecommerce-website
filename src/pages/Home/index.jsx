@@ -5,11 +5,6 @@ import { ProductContext } from "~contexts/ProductContext";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
-  const filteredProducts = products.filter((item) => {
-    return (
-      item.category === "men's clothing" || item.category === "women's clothing"
-    );
-  });
 
   return (
     <div>
@@ -22,7 +17,7 @@ const Home = () => {
           max-w-sm mx-auto md:max-w-none md:mx-0
                       "
           >
-            {filteredProducts.map((product) => {
+            {products.map((product) => {
               return <Product product={product} key={product.id} />;
             })}
           </div>
