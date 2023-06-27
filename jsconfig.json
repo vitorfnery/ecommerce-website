@@ -22,6 +22,12 @@
             ],
             "~CartItem/*": [
                 "src/components/CartItem/*"
+            ],
+            "~constants/*": [
+                "src/constants/*"
+            ],
+            "~ProductsFilterBtns/*": [
+                "src/containers/ProductsFilterBtns/*"
             ]
         }
     }

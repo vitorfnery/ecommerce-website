@@ -1,15 +1,35 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Product from "~components/Product";
 import Hero from "~containers/Hero";
+import ProductsFilterBtns from "~containers/ProductsFilterBtns";
 import { ProductContext } from "~contexts/ProductContext";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    setItems(products);
+  }, [products]);
+  const menuItems = [...new Set(products.map((item) => item.category))];
+  const filterItems = (curcat) => {
+    const newItems = products.filter((newItem) => {
+      return newItem.category === curcat;
+    });
+    setItems(newItems);
+  };
 
   return (
     <div>
       <Hero />
       <section className="py-16">
+        <div className="w-full mb-4">
+          <ProductsFilterBtns
+            setItems={setItems}
+            menuItems={menuItems}
+            filterItems={filterItems}
+            products={products}
+          />
+        </div>
         <div className="container mx-auto">
           <div
             className="
@@ -17,7 +37,7 @@ const Home = () => {
           max-w-sm mx-auto md:max-w-none md:mx-0
                       "
           >
-            {products.map((product) => {
+            {items.map((product) => {
               return <Product product={product} key={product.id} />;
             })}
           </div>

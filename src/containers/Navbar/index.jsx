@@ -20,10 +20,12 @@ const Navbar = () => {
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
       } fixed w-full z-10 transition-all`}
     >
-      <div className="container mx-auto flex items-center justify-between h-full">
-        <Link to={"/"}>
-          <img className="max-w-[40px]" src={Logo} alt="" />
-        </Link>
+      <nav className="container mx-auto flex items-center justify-between h-full">
+        <div className="flex items-center gap-3">
+          <Link to={"/"}>
+            <img className="max-w-[40px]" src={Logo} alt="" />
+          </Link>
+        </div>
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
@@ -39,7 +41,7 @@ const Navbar = () => {
             {itemAmount}
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };
