@@ -4,13 +4,13 @@
     align-items: center;
     gap: 4px; 
     border-radius: 4px;
-    border: 1px solid #e64e86;
-    background: rgba(255, 255, 255, 0.10);
-    box-shadow: 2px 2px 4px 0px rgba(245, 95, 153, 0.6), -2px -2px 4px 0px #FFAAA5;
+    background: #e4242e;;
+    border: 1px solid #dd0e18;
+    box-shadow: 2px 2px 4px 0px rgba(218, 45, 53, 0.6), -2px -2px 4px 0px #FFAAA5;
 }
 
 .filter__button__span {
-    color: #f56b9d;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.56px;
@@ -20,12 +20,11 @@
 
 .filter__button:active {
     border: 1px solid #e4709b;
-    background: rgba(243, 243, 243, 0.01);
-    box-shadow: -4px -4px 8px 0px rgba(255, 209, 207, 0.80) inset, 4px 4px 8px 0px #9C3F3F inset;
+    box-shadow: -4px -4px 8px 0px rgba(231, 58, 52, 0.8) inset, 4px 4px 8px 0px #df8080 inset;
 }
 
 .filter__button__span:active {
-    color: #a54e6e; 
+    color: #fff; 
 }
 
 .filter__button__select{
@@ -33,9 +32,9 @@
     align-items: center;
     padding: 4px 8px;
     gap: 4px;
-    background: linear-gradient(167.24deg, #FFFFFF 6.63%, #FBA9A5 134.73%);
+    background: #dd0e18;
     border: 1px solid #e74983;
-    box-shadow: -2px -2px 4px #FFAAA5, 2px 2px 4px rgba(184, 21, 80, 0.6);
+    box-shadow: -2px -2px 4px #bd4943, 2px 2px 4px rgba(184, 21, 80, 0.6);
     border-radius: 4px;
 }
 
@@ -45,7 +44,7 @@
     font-size: 14px;
     line-height: 16.56px;
     text-transform: uppercase;
-    color: #dd3472;
+    color: #fff;
 }
 
 .filter__button__selected:active {

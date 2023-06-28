@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import WomanImg from "~assets/woman_hero.png";
+import ManImg from "~assets/man_hero.png";
 
 const Hero = () => {
   return (
@@ -16,8 +16,9 @@ const Hero = () => {
             <span>New Trend</span>
           </div>
           <div className="text-[70px] leading-[1.1] font-light mb-4">
-            <h1>AUTUMN SALE STYLISH</h1>
-            <div className="font-semibold">WOMEN'S</div>
+            <h1>AUTUMN SALE</h1>
+            <p>BE</p>
+            <div className="font-semibold">YOURSELF</div>
           </div>
           <Link
             to={"/"}
@@ -28,7 +29,7 @@ const Hero = () => {
         </div>
 
         <div className="hidden lg:block">
-          <img src={WomanImg} alt="Woman in a dress" />
+          <img className="-mt-[45%]" src={ManImg} alt="Man" />
         </div>
       </div>
     </section>
