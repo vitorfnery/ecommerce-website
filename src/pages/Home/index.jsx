@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import Product from "~components/Product";
 import Hero from "~containers/Hero";
-import ProductsFilterBtns from "~containers/ProductsFilterBtns";
+import ProductsFilter from "~containers/ProductsFilter";
 import { ProductContext } from "~contexts/ProductContext";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <Hero />
       <section className="py-16">
         <div className="w-full mb-4">
-          <ProductsFilterBtns
+          <ProductsFilter
             setItems={setItems}
             menuItems={menuItems}
             filterItems={filterItems}

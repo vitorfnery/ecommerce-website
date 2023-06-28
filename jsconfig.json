@@ -26,8 +26,11 @@
             "~constants/*": [
                 "src/constants/*"
             ],
-            "~ProductsFilterBtns/*": [
-                "src/containers/ProductsFilterBtns/*"
+            "~ProductsFilter/*": [
+                "src/containers/ProductsFilter/*"
+            ],
+            "~FilterButton/*": [
+                "src/components/FilterButton/*"
             ]
         }
     }

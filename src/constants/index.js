@@ -1,1 +1,1 @@
-export * from '~constants/navbar-info.js';
+export * from '~constants/products-filter-info.js';
