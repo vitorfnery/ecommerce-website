@@ -3,15 +3,16 @@
     padding: 4px 8px;
     align-items: center;
     gap: 4px; 
-    border-radius: 4px;
-    background: #e4242e;;
-    border: 1px solid #dd0e18;
-    box-shadow: 2px 2px 4px 0px rgba(218, 45, 53, 0.6), -2px -2px 4px 0px #FFAAA5;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid rgb(239 68 68);
+    /* box-shadow: 2px 2px 4px 0px rgba(218, 45, 53, 0.6), -2px -2px 4px 0px #FFAAA5; */
 }
 
 .filter__button__span {
-    color: #fff;
+    color: rgb(239 68 68);
     font-size: 14px;
+    font-family: Poppins;
     font-weight: 700;
     line-height: 16.56px;
     text-transform: uppercase;
@@ -19,8 +20,8 @@
 }
 
 .filter__button:active {
-    border: 1px solid #e4709b;
-    box-shadow: -4px -4px 8px 0px rgba(231, 58, 52, 0.8) inset, 4px 4px 8px 0px #df8080 inset;
+    border: 1px solid rgb(239 68 68);
+    /* box-shadow: -4px -4px 8px 0px rgba(231, 58, 52, 0.8) inset, 4px 4px 8px 0px #df8080 inset; */
 }
 
 .filter__button__span:active {
@@ -32,15 +33,16 @@
     align-items: center;
     padding: 4px 8px;
     gap: 4px;
-    background: #dd0e18;
-    border: 1px solid #e74983;
-    box-shadow: -2px -2px 4px #bd4943, 2px 2px 4px rgba(184, 21, 80, 0.6);
-    border-radius: 4px;
+    background: rgb(239 68 68);
+    border: 1px solid rgb(239 68 68);
+    /* box-shadow: -2px -2px 4px #bd4943, 2px 2px 4px rgba(184, 21, 80, 0.6); */
+    border-radius: 8px;
 }
 
 .filter__button__span__selected {
     font-style: normal;
     font-weight: 700;
+    font-family: Poppins;
     font-size: 14px;
     line-height: 16.56px;
     text-transform: uppercase;
@@ -48,5 +50,5 @@
 }
 
 .filter__button__selected:active {
-    box-shadow: inset 4px 4px 8px #9C3F3F, inset -4px -4px 8px rgba(255, 209, 207, 0.8); 
+    /* box-shadow: inset 4px 4px 8px #9C3F3F, inset -4px -4px 8px rgba(255, 209, 207, 0.8);  */
 }

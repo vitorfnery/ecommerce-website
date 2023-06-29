@@ -13,7 +13,7 @@ const ProductsFilter = ({ setItems, menuItems, filterItems, products }) => {
   return (
     <div
       className="
-                flex justify-center flex-wrap gap-4 
+                flex justify-center flex-wrap gap-4 md:gap-10 lg:gap-16
                 font-primary
                 "
     >
