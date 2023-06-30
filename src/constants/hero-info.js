@@ -1,5 +1,5 @@
 export const HERO_INFO = {
-    prev: "new trend",
+    prev: "latest trend",
     saleTitle: "autumn sale",
     underTitle: "be",
     content: "yourself",
